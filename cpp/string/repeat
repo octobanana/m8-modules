@@ -5,7 +5,7 @@ namespace String
 
 std::string repeat(std::string const& str, size_t num)
 {
-  if (num < 2) return val;
+  if (num < 2) return str;
   auto res = std::string();
   res.reserve(str.size() * num);
   for (size_t i = 0; i < num; ++i)
