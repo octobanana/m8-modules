@@ -1,0 +1,17 @@
+namespace String
+{
+size_t count(std::string const& str, std::string const& s)
+{
+  size_t pos {0};
+  size_t count {0};
+
+  for (;;)
+  {
+    pos = str.find(s, pos);
+    if (pos == std::string::npos) break;
+    ++count;
+    ++pos;
+  }
+  return count;
+}
+} // namespace String
